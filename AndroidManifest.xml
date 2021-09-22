@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vha">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VHA">
+        <activity
+            android:name=".WaterMonitor"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".Contact"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".OxygenMonitor"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".SleepMonitor"
+            android:label="SleepMonitor"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".HeartMonitor"
+            android:label="@string/title_activity_heart_monitor"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".DietPlan"
+            android:label="DietPlan"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".BreakFast"
+            android:label="BreakFast"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".CalorieMonitor"
+            android:label="CMonitor"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".ColdFever"
+            android:label="CF"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".Dinner"
+            android:label="Dinner"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".HairFall"
+            android:label="HairFall"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".Headache"
+            android:label="Headache"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".Lunch"
+            android:label="Lunch"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".Remedies"
+            android:label="Remedies"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".Snack"
+            android:label="Snack"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".StomachPain"
+            android:label="StomachPain"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".TempMonitor"
+            android:label="TempMonitor"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".WaterSchedule"
+            android:label="WaterSchedule"
+            android:theme="@style/Theme.VHA.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.VHA.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+                <receiver android:name=".AlertReceiver" />
+    </application>
+
+</manifest>
