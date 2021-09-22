@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFEEA"
+    tools:context=".WaterSchedule">
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:text="WATER REMINDER"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:fontFamily="@font/alike"
+        android:textStyle="bold"
+        android:text="Set Reminder Period"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#F6CBFA"
+        android:textColor="@color/black"
+        android:text="Start Reminder" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F6CBFA"
+        android:textColor="@color/black"
+        android:layout_below="@id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Stop Remainder" />
+
+</RelativeLayout>

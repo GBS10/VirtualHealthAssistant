@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFEEA"
+    tools:context=".HeartMonitor">
+
+    <ImageView
+        android:id="@+id/heartgraph"
+        android:layout_width="317dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/heartgraph_foreground" />
+
+    <TextView
+        android:id="@+id/htitle"
+        android:layout_width="242dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="monospace"
+        android:text="HEART HEALTH"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="378dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="1dp"
+        app:chipSpacingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/heartgraph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:selectionRequired="true"
+        app:singleLine="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/hday"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textAlignment="center"
+            android:onClick="onDayClick"
+            app:chipBackgroundColor="#F6CBFA" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/hmonth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textAlignment="center"
+            app:chipBackgroundColor="#F6CBFA" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/hyear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textAlignment="center"
+            app:chipBackgroundColor="#F6CBFA" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/hhealth"
+        android:layout_width="242dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alike"
+        android:text="How's your heart doing?"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartgraph" />
+
+    <ProgressBar
+        android:id="@+id/hbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="80"
+        android:progressTint="#2EE40E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hhealth"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/heartStatus"
+        android:layout_width="115dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Healthy"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hbar" />
+
+    <TextView
+        android:id="@+id/hrate"
+        android:layout_width="66dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp"
+        android:text="72 bpm"
+        app:layout_constraintStart_toEndOf="@+id/hbar"
+        app:layout_constraintTop_toBottomOf="@+id/hhealth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

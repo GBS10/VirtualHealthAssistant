@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFEEA"
+    tools:context=".OxygenMonitor">
+
+    <ImageView
+        android:id="@+id/heartgraph"
+        android:layout_width="317dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/heartgraph_foreground" />
+
+    <TextView
+        android:id="@+id/otitle"
+        android:layout_width="242dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="monospace"
+        android:text="CALORIES"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="378dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="1dp"
+        app:chipSpacingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/heartgraph"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:selectionRequired="true"
+        app:singleLine="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cday"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textAlignment="center"
+            app:chipBackgroundColor="#F6CBFA" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cmonth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textAlignment="center"
+            app:chipBackgroundColor="#F6CBFA" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cyear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textAlignment="center"
+            app:chipBackgroundColor="#F6CBFA" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/allowedCal"
+        android:layout_width="52dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="1024 kcal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/consumedCal"
+        android:layout_width="52dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="1000 kcal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="215dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Allowed calories for you.."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartgraph" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="283dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="Calories consumed for the day.."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartgraph" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

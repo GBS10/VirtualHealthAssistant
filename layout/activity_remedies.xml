@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFEEA"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="HERE ARE SOME REMEDIES FOR THE MOST COMMON AILMENTS"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F6CBFA"
+            android:textColor="@color/black"
+            android:onClick="onClick"
+            android:fontFamily="@font/alike"
+            android:text="Cold/Fever"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#F6CBFA"
+            android:textColor="@color/black"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:onClick="onClick"
+            android:text="Hair fall"
+            android:fontFamily="@font/alike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F6CBFA"
+            android:textColor="@color/black"
+            android:onClick="onClick"
+            android:text="Stomach Pain"
+            android:fontFamily="@font/alike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/Button04"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F6CBFA"
+            android:fontFamily="@font/alike"
+            android:textColor="@color/black"
+            android:onClick="onClick"
+            android:text="Headache"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+</RelativeLayout>

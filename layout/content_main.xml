@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFEEA"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageButton
+        android:id="@+id/heartbutton"
+        android:layout_width="151dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/oxygenbutton"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onButtonClick"
+        app:srcCompat="@mipmap/heart"
+        />
+
+    <ImageButton
+        android:id="@+id/oxygenbutton"
+        android:layout_width="151dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onButtonClick"
+        app:srcCompat="@mipmap/oxygen" />
+
+    <ImageButton
+        android:id="@+id/tempbutton"
+        android:layout_width="151dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/foodbutton"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartbutton"
+        android:onClick="onButtonClick"
+        app:srcCompat="@mipmap/temp" />
+
+    <ImageButton
+        android:id="@+id/foodbutton"
+        android:layout_width="151dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oxygenbutton"
+        android:onClick="onButtonClick"
+        app:srcCompat="@mipmap/food" />
+
+    <ImageButton
+        android:id="@+id/sleepbutton"
+        android:layout_width="151dp"
+        android:layout_height="126dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/waterbutton"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempbutton"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@mipmap/sleep"
+        android:onClick="onButtonClick"/>
+
+    <ImageButton
+        android:id="@+id/waterbutton"
+        android:layout_width="151dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodbutton"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@mipmap/water"
+        android:onClick="onButtonClick"/>
+
+    <TextView
+        android:id="@+id/oxylvl"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:text="92 mg"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/alike"
+        app:layout_constraintTop_toBottomOf="@+id/oxygenbutton" />
+
+    <TextView
+        android:id="@+id/heartrate"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="84dp"
+        android:text="72 bpm"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/oxylvl"
+        android:fontFamily="@font/alike"
+        app:layout_constraintTop_toBottomOf="@+id/heartbutton" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="68dp"
+        android:text="98.3 C"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/food"
+        android:fontFamily="@font/alike"
+        app:layout_constraintTop_toBottomOf="@+id/tempbutton" />
+
+    <TextView
+        android:id="@+id/food"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="48dp"
+        android:text="1024kcal"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/alike"
+        app:layout_constraintTop_toBottomOf="@+id/foodbutton" />
+
+    <TextView
+        android:id="@+id/sleep"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="76dp"
+        android:text="5 hrs"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/water"
+        android:fontFamily="@font/alike"
+        app:layout_constraintTop_toBottomOf="@+id/sleepbutton" />
+
+    <TextView
+        android:id="@+id/water"
+        android:layout_width="103dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="40dp"
+        android:text="5 gls"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/alike"
+        app:layout_constraintTop_toBottomOf="@+id/waterbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
