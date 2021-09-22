@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@android:drawable/stat_sys_download"
+            android:title="Generate Report "
+            android:fontFamily="@font/alike"
+           />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Send Report"
+            android:fontFamily="@font/alike"
+            />
+        <item
+            android:id="@+id/nav_diet"
+            android:icon="@android:drawable/ic_menu_day"
+            android:title="Diet plan"
+            android:fontFamily="@font/alike"/>
+        <item
+            android:id="@+id/nav_water"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Water scheudle"
+            android:fontFamily="@font/alike"
+            />
+        <item
+            android:id="@+id/nav_routine"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="Routine"
+            />
+        <item
+            android:id="@+id/nav_rem"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Remedies"
+            android:fontFamily="@font/alike"/>
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Contact us"
+            android:fontFamily="@font/alike"
+            />
+    </group>
+</menu>
